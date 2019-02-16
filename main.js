@@ -129,10 +129,14 @@ function renderQuestion() {
 
     //changes class for selected option and displays submit button
     $('input').click(function () {
-        let selected = $('input.selected');
         $(this).toggleClass('selected');
+                let selected = $('input.selected');
         selected.not(this).removeClass('selected');
-        $('.submitButton').show();
+        if (selected.length>0) {
+            $('.submitButton').show(); 
+        }
+        else {$('.submitButton').hide();
+    }
 
     });
 

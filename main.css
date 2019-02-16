@@ -1,0 +1,502 @@
+/* ------------general settings----------------   */
+
+body {
+    
+    background: url('https://voxpopulisphere.files.wordpress.com/2015/12/fa_1185_tomwaits15003.jpg');
+    font-family: 'Passion One', cursive;
+    box-sizing: border-box;
+    background-size: cover;
+    color:white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  margin-right:0px;
+    margin-left: 0px;
+
+}
+
+h1  {
+    font-family: 'Passion One', cursive;
+    text-align: center;
+    letter-spacing: 1px;
+    color:#293042;
+
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    color:#293042;
+    font-family: 'Passion One', cursive;
+}
+
+
+.selected   {
+    
+     background-image:
+    linear-gradient(
+      to right, 
+      #5D6D7E, #283747
+    );
+    color:white;
+ 
+}
+
+.questionAnswerForm{
+    display: none;    
+}
+
+.user-progress >h3 {
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+}
+
+ .next , .submitButton{
+    margin-top: 30px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right:auto;    
+    display:block;
+    border-radius: 5px;
+    background-color: #326273;
+    border:1px white solid;
+    color:#ECECEC;
+    font-size: 1.2em;
+    width: 100px;
+ 
+}
+
+.restartButton {
+    padding: 50px;
+    margin-left: auto;
+    margin-right:auto;    
+    display:block;
+    border-radius: 5px;
+    border:1px white solid;
+    background-color: #326273;
+    color:#ECECEC;
+    width: 200px; 
+        font-size: 1.5em;
+}
+.results {
+    padding:20px;
+    margin:0px;
+}
+.startButton {
+    padding: 10px;
+    
+    margin-left: auto;
+    margin-right:auto;  
+    margin-top:100px; 
+    display:block;
+    border-radius: 5px;
+    border:1px white solid;
+    background-color: #326273;
+    color:#ECECEC;
+    font-size: 1.5em;
+    width: 150px;
+}
+
+.user-progress {
+    display:none;
+}
+.wrong-answer{
+    color:rgb(90, 22, 14);
+    margin-bottom: 20px;
+    margin-top:0px;
+}
+fieldset    {
+    border: none;
+     margin-right:auto;
+    margin-left:auto;
+
+}
+input   {
+   border:1px solid black;
+    padding:10px;
+    list-style-type: none;
+    margin: 0px auto 20px;
+    border-radius: 5px;
+font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    background-color:#99A3A4;
+    color:#121212;
+    width:80%;
+    text-align: center;
+    /*font-size: 1em;*/
+    display: block;
+}
+img {
+    width:100%;
+    align-self: center;
+    border:3px solid black;
+    border-radius: 5px;
+}
+
+#wrongAnswer, #rightAnswer   {   
+    display: flex;
+    flex-direction: column;
+    margin-top:10px;
+}
+
+.restartButton {
+    margin-top: 30px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right:auto;    
+    display:block;
+    border-radius: 5px;
+    background-color: #326273;
+    color:#ECECEC;
+    width:200px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    color:#ECECEC;    
+    background:gray;
+    opacity: 0.7;
+    justify-content: space-around;
+    
+}
+
+.user-progress {
+    display:none;
+}
+
+input   {
+   border:1px solid black;
+    padding:10px;
+    list-style-type: none;
+    margin: 0px auto 20px;
+    border-radius: 5px;
+font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    background-color:#99A3A4;
+    color:#121212;
+    width:100%;
+    text-align: center;
+    font-size: 1em;
+    display: block;
+}
+
+/*-------mobile screen settings------------*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+
+
+
+    .score  {
+    letter-spacing: 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    display:none;
+    
+}
+.startQuiz > p   {
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+    color:#293042;
+    font-style: italic;
+    text-align: center;
+    }
+    
+.startQuiz  {
+    justify-content: flex-end;
+    width:200px;
+    height:150px;
+    padding:10px;
+    }
+
+    .startButton {
+    padding: 10px;
+    
+    margin-left: auto;
+    margin-right:auto;  
+    margin-top:50%;  
+    display:block;
+    border-radius: 5px;
+    border:1px white solid;
+    background-color: #326273;
+    color:#ECECEC;
+    width: 150px;
+}
+
+.submitButton {
+    margin-top: 10%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right:auto;    
+    display:block;
+    border-radius: 5px;
+    background-color: #326273;
+    border:1px white solid;
+    color:#ECECEC;
+    width: 100px;
+    
+}
+
+h1  {
+    text-align: center;
+    letter-spacing: 1px;
+    color:#293042;
+    font-size: 2em;
+    margin-right:20px;
+    margin-left:20px;
+
+}
+
+input   {
+   border:1px solid black;
+    padding:10px;
+    list-style-type: none;
+    margin: 0px auto 20px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    background-color:#99A3A4;
+    color:#121212;
+    width:100%;
+    text-align: center;
+    display: block;
+}
+
+#restart    {
+    background-image: url('https://media.ntslive.co.uk/crop/770x770/641f9320-3746-4f51-98a0-e3442aee8b45_1510531200.png');
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    background-attachment: fixed;
+    background-size: cover;
+    height:100vh;
+}
+
+
+.questionAnswerForm{
+width:200px;
+margin-left:40px;
+
+}
+
+
+.flex-container-header{
+    display: flex;
+
+    }
+
+    .wrong-answer{
+    color:rgb(90, 22, 14);
+    margin-bottom: 20px;
+    }
+
+}
+
+/*--------iPad display----------*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1224px) {
+
+
+main{
+display: flex;
+justify-content: flex-end;
+}
+
+p   {
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+    color:#37415a;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+h1  {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2em;
+    width:100%;
+    color:#293042;
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    color:#293042;
+
+}
+
+.flex-container-header{
+    display: flex;
+    justify-content: flex-end; 
+
+    }
+
+.questionAnswerForm{
+    display: none;
+    margin-top:50px;
+    margin-right:10%;
+    width: 300px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+.score  {
+    letter-spacing: 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    display:none;
+}
+
+.startQuiz  {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    height:400px;
+    width:350px;
+    margin-top:90px;
+    margin-right:60px;
+    }   
+#restart    {
+    margin-top:30px;
+    background-position: center;
+    margin-right:auto;
+    margin-left:auto;
+    font-family: 'Passion One', cursive;
+
+    }
+}
+
+/*-----------desktop display------------*/
+@media only screen  and (min-width : 1224px) {
+body {
+    
+    background-image: url("https://voxpopulisphere.files.wordpress.com/2015/12/fa_1185_tomwaits15003.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Anton', sans-serif;
+    color:white;
+}
+
+
+header  {
+    margin-top: 10%;
+    margin-left:20px;
+}
+h1  {
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+.on-full-screen {
+    font-size: 1.5em;
+}
+h2 {
+    color:#37415a;
+    font-size: 2.3em;
+
+}
+
+h3  {
+        color:rgb(90, 80, 80);
+}
+
+input   {
+   border:1px solid black;
+    padding:15px;
+    list-style-type: none;
+    border-radius: 5px;
+font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    background-color:#99A3A4;
+    color:#121212;
+    text-align: center;
+    font-size: 1.5em;
+    display: block;
+    
+}
+
+.startQuiz  {
+    justify-content: flex-end;
+    width:300px;
+    height:500px;
+    padding:10px;
+    margin-right:10%;
+
+    }
+
+.flex-container {
+    display:flex;
+    margin-left:60%;
+    background: none;
+}
+.flex-container-header  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* landing screen quote*/
+
+p   {
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+    color:#293042;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.3em;
+
+}
+
+.submitButton {
+    margin-top: 40px;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-left: auto;
+    margin-right:auto;    
+    display:block;
+    border-radius: 5px;
+    background-color: #326273;
+    border:1px gray solid;
+    color:#ECECEC;
+    width: 100px;
+}
+
+
+.questionAnswerForm{
+    display: none;
+    margin-top:50px;
+    margin-right:10%;
+    width: 500px;   
+}
+.user-progress{
+    display: none;
+    
+    
+    color:#ECECEC;
+    font-size: 1.5em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+
+}
+.score {
+    display:none;
+    color:#ECECEC;
+    font-size: 1.5em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+
+}
+#restart    {
+    margin-top:50px;
+    background-position: center;
+    margin-right:auto;
+    margin-left:auto;
+    font-family: 'Passion One', cursive;
+}
+main{
+    display:flex;
+    justify-content: flex-end;
+    }
+}

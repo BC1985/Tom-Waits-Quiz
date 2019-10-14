@@ -98,6 +98,7 @@ h2 {
   margin-top: 0px;
 }
 fieldset {
+  padding: 0;
   border: none;
   margin-right: auto;
   margin-left: auto;
@@ -365,6 +366,9 @@ input {
   .questionAnswerForm h2 {
     text-align: left;
   }
+}
+/* iPhone 6,7,8S landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 }
 /*--------iPad display----------*/
 

@@ -22,7 +22,6 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   letter-spacing: 1px;
   color: #293042;
   font-family: "Passion One", cursive;
@@ -321,9 +320,7 @@ input {
     font-size: 0.8em;
     padding: 20px 20px 0 20px;
   }
-  .questionAnswerForm h2 {
-    text-align: left;
-  }
+
   .submit-button {
     width: 100%;
     margin-top: 0;
@@ -362,9 +359,6 @@ input {
     margin-left: 350px;
     font-size: 0.8em;
     padding: 20px 20px 0 20px;
-  }
-  .questionAnswerForm h2 {
-    text-align: left;
   }
 }
 /* iPhone 6,7,8S landscape */

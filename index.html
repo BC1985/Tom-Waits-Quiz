@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>You Don't Know Tom Waits</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Anton|Staatliches|Lora|Passion+One" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Staatliches|Lora|Passion+One"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
-    <header>
-        <div class="flex-container-header">
-            <div class='startQuiz'>
-                <h1>YOU DON'T KNOW TOM WAITS</h1>
-                <p>“I like beautiful melodies telling me terrible things.”</p>
-                <button class='startButton'>Start quiz</button>
-            </div>
-        </div>
-    </header>
-
-
+  <body>
     <div class="flex-container">
-        <div class="user-progress">
-            <h3>Question <span class='questionNumber'></span> of 10</h3>
-        </div>
-        <div class="score">
-            <h3>Score: <span id='score'>0</span></h3>
-        </div>
-
+      <div class="user-progress">
+        <h3>Question <span class="questionNumber"></span> of 10</h3>
+      </div>
+      <div class="score">
+        <h3>Score: <span id="score">0</span></h3>
+      </div>
     </div>
-    <main>
-        <div class='questionAnswerForm'>
+    <header>
+      <div class="flex-container-header">
+        <div class="startQuiz">
+          <h1>YOU DON'T KNOW TOM WAITS</h1>
+          <p id="quote">
+            “I like beautiful melodies telling me terrible things.”
+          </p>
+          <button class="startButton">Start quiz</button>
         </div>
+      </div>
+    </header>
+    <main>
+      <div class="questionAnswerForm"></div>
     </main>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

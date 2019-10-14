@@ -230,7 +230,7 @@ function showRestartScreen() {
   $("main").html(
     `<section id='restart'> 
     <h1 class='results'>Your score is ${score} out of 10</h1> 
-    <button class='restartButton'>Restart quiz</button>
+    <button class='restart-button'>Restart quiz</button>
     </section>`
   );
 }
@@ -253,7 +253,7 @@ function restartQuiz() {
     "url('https://www.morrisonhotelgallery.com/images/big/Tom%20Waits%20233B%20(3A)II.jpg')"
   );
   $("h1").css("color", "white");
-  $("main").on("click", ".restartButton", function(event) {
+  $("main").on("click", ".restart-button", function(event) {
     location.reload();
   });
   removeCounter();

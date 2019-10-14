@@ -11,8 +11,7 @@ body {
   -o-background-size: cover;
   /* background-attachment: fixed; */
   /* background-repeat: repeat; */
-  margin-right: 0px;
-  margin-left: 0px;
+  margin: 0;
 }
 
 h1 {

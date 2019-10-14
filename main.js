@@ -145,7 +145,7 @@ function generateQuestion() {
     }' id='answer4' required>
     </label>
 
-    <button type='submit' class='submitButton'>Submit</button>
+    <button type='submit' class='submit-button'>Submit</button>
     </fieldset>
     </form>`;
   } else {
@@ -163,9 +163,9 @@ function renderQuestion() {
     let selected = $("input.selected");
     selected.not(this).removeClass("selected");
     if (selected.length > 0) {
-      $(".submitButton").show();
+      $(".submit-button").show();
     } else {
-      $(".submitButton").hide();
+      $(".submit-button").hide();
     }
   });
 }
@@ -177,7 +177,7 @@ function changeScore() {
 }
 //hides submit button until user selects option
 function hideSubmitButton() {
-  $(".submitButton").hide();
+  $(".submit-button").hide();
 }
 
 //user makes selection

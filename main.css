@@ -42,7 +42,7 @@ h2 {
 }
 
 .next,
-.submitButton {
+.submit-button {
   margin-top: 30px;
   padding: 10px;
   margin-left: auto;
@@ -55,10 +55,10 @@ h2 {
   font-size: 1.2em;
   width: 100px;
 }
-.submitButton:focus {
+.submit-button:focus {
   border: 3px solid red;
 }
-.restartButton {
+.restart-button {
   padding: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -74,7 +74,7 @@ h2 {
   padding: 20px;
   margin: 0px;
 }
-.startButton {
+.start-button {
   padding: 10px 20px;
 
   margin-left: auto;
@@ -131,7 +131,7 @@ img {
   margin-top: 20px;
 }
 
-.restartButton {
+.restart-button {
   margin-top: 30px;
   padding: 10px;
   margin-left: auto;
@@ -211,7 +211,7 @@ input {
     padding: 10px;
   }
 
-  .startButton {
+  .start-button {
     padding: 10px;
 
     margin-left: auto;
@@ -225,7 +225,7 @@ input {
     width: 150px;
   }
 
-  .submitButton {
+  .submit-button {
     margin-top: 10%;
     padding: 10px;
     margin-left: auto;
@@ -268,7 +268,7 @@ input {
     margin-left: 40px;
   }
 
-  .flex-container-header {
+  .counter {
     display: flex;
   }
 
@@ -291,17 +291,17 @@ input {
   .flex-container h3 {
     margin: 10px;
   }
-  .flex-container-header {
+  .counter {
     display: flex;
     padding: 30px;
     margin-left: 250px;
     justify-content: flex-end;
   }
-  .flex-container-header h1 {
+  .counter h1 {
     font-size: 20px;
   }
 
-  .startButton {
+  .start-button {
     font-size: 1em;
     margin-top: 20px;
     width: 100%;
@@ -323,7 +323,7 @@ input {
   .questionAnswerForm h2 {
     text-align: left;
   }
-  .submitButton {
+  .submit-button {
     width: 100%;
     margin-top: 0;
   }
@@ -337,16 +337,16 @@ input {
   .flex-container h3 {
     margin: 10px;
   }
-  .flex-container-header {
+  .counter {
     display: flex;
     padding: 30px;
     margin-left: 350px;
     justify-content: flex-end;
   }
-  .flex-container-header h1 {
+  .counter h1 {
     font-size: 20px;
   }
-  .startButton {
+  .start-button {
     margin-top: 30px;
   }
   #quote {
@@ -397,7 +397,7 @@ input {
     color: #293042;
   }
 
-  .flex-container-header {
+  .counter {
     display: flex;
     justify-content: flex-end;
   }
@@ -494,7 +494,7 @@ input {
     margin-left: 60%;
     background: none;
   }
-  .flex-container-header {
+  .counter {
     display: flex;
     justify-content: flex-end;
   }
@@ -510,7 +510,7 @@ input {
     font-size: 1.3em;
   }
 
-  .submitButton {
+  .submit-button {
     margin-top: 40px;
     font-size: 1.5em;
     padding: 10px;

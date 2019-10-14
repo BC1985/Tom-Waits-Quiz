@@ -56,8 +56,7 @@ h2 {
   width: 100px;
 }
 .submitButton:focus {
-  background: rgb(125, 128, 136);
-  color: white;
+  border: 3px solid red;
 }
 .restartButton {
   padding: 50px;
@@ -129,7 +128,7 @@ img {
 #rightAnswer {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .restartButton {
@@ -174,8 +173,7 @@ input {
   display: block;
 }
 :focus {
-  background: rgb(125, 128, 136);
-  color: white;
+  border: 3px solid red;
 }
 
 /*-------mobile screen settings------------*/
@@ -282,13 +280,13 @@ input {
 
 /*iPhone 5 Landscape */
 /* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   body {
     background: url("https://voxpopulisphere.files.wordpress.com/2015/12/fa_1185_tomwaits15003.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: -20% 0;
-    min-height: 100vh;
+    max-height: 100vh;
   }
   .flex-container h3 {
     margin: 10px;
@@ -331,6 +329,40 @@ input {
   }
 }
 
+/* iPhone 6,7,8 Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body {
+    background-size: cover;
+  }
+  .flex-container h3 {
+    margin: 10px;
+  }
+  .flex-container-header {
+    display: flex;
+    padding: 30px;
+    margin-left: 250px;
+    justify-content: flex-end;
+  }
+  .flex-container-header h1 {
+    font-size: 20px;
+  }
+  #quote {
+    font-family: "Lora", serif;
+    letter-spacing: 1px;
+    color: #37415a;
+    font-style: italic;
+    text-align: left;
+    font-size: 0.8em;
+  }
+  .questionAnswerForm {
+    margin-left: 350px;
+    font-size: 0.8em;
+    padding: 20px 20px 0 20px;
+  }
+  .questionAnswerForm h2 {
+    text-align: left;
+  }
+}
 /*--------iPad display----------*/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1224px) {

@@ -19,6 +19,7 @@ h1 {
   text-align: center;
   letter-spacing: 1px;
   color: #293042;
+  font-size: 2.5em;
 }
 
 h2 {
@@ -57,20 +58,9 @@ h2 {
 .submit-button:focus {
   border: 3px solid red;
 }
-.restart-button {
-  padding: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border-radius: 5px;
-  border: 1px white solid;
-  background-color: #326273;
-  color: #ececec;
-  width: 200px;
-  font-size: 1.5em;
-}
+
 .results {
-  padding: 20px;
+  padding: 20px auto;
   margin: 0px;
 }
 .start-button {
@@ -128,14 +118,12 @@ img {
 #rightAnswer {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
 }
 
 .restart-button {
-  margin-top: 30px;
+  margin: 10px auto;
+  font-size: 1em;
   padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   border-radius: 5px;
   background-color: #326273;
@@ -252,15 +240,23 @@ input {
     text-align: center;
     display: block;
   }
+  .results {
+    padding: 20px auto;
+    margin: 0px;
+    font-size: 1.5em;
+  }
 
   #restart {
-    background-image: url("https://media.ntslive.co.uk/crop/770x770/641f9320-3746-4f51-98a0-e3442aee8b45_1510531200.png");
-    background-position-x: 30%;
+    /* background-image: url("https://media.ntslive.co.uk/crop/770x770/641f9320-3746-4f51-98a0-e3442aee8b45_1510531200.png"); */
+    background-image: url("https://i.scdn.co/image/83ddcec755502352a3b1edead904b49eddb80e3c");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 60px;
+    background-position: 30% 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-size: cover;
-    height: 100vh;
   }
 
   .questionAnswerForm {
@@ -274,7 +270,7 @@ input {
 
   .wrong-answer {
     color: rgb(90, 22, 14);
-    margin-bottom: 20px;
+    margin: 20px auto 5px;
   }
 }
 
@@ -325,6 +321,10 @@ input {
     width: 100%;
     margin-top: 0;
   }
+  .results {
+    padding: 20px auto;
+    margin: 30px;
+  }
 }
 
 /* iPhone 6,7,8 Landscape */
@@ -363,6 +363,52 @@ input {
 }
 /* iPhone 6,7,8S landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .flex-container h3 {
+    margin: 10px;
+  }
+  .counter {
+    display: flex;
+    padding: 30px;
+    margin-left: 350px;
+    justify-content: flex-end;
+  }
+  .counter h1 {
+    font-size: 20px;
+  }
+  .start-button {
+    margin-top: 30px;
+  }
+  .submit-button {
+    margin: 5px auto 10px;
+  }
+  .next {
+    margin-bottom: 10px;
+  }
+  #quote {
+    font-family: "Lora", serif;
+    letter-spacing: 1px;
+    color: #37415a;
+    font-style: italic;
+    text-align: left;
+    font-size: 0.8em;
+  }
+  .questionAnswerForm {
+    margin-left: 400px;
+    font-size: 0.8em;
+    padding: 30px 30px 0 20px;
+  }
+  .questionAnswerForm h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+}
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .results {
+    font-size: 2em;
+  }
 }
 /*--------iPad display----------*/
 
@@ -390,7 +436,6 @@ input {
   }
 
   h2 {
-    text-align: center;
     letter-spacing: 1px;
     color: #293042;
   }
@@ -402,7 +447,6 @@ input {
 
   .questionAnswerForm {
     display: none;
-    margin-top: 50px;
     margin-right: 10%;
     width: 300px;
     margin-left: 20px;

@@ -4,13 +4,13 @@ body {
   background: url("https://voxpopulisphere.files.wordpress.com/2015/12/fa_1185_tomwaits15003.jpg");
   font-family: "Passion One", cursive;
   box-sizing: border-box;
-  /* background-size: cover; */
-  color: white;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   /* background-attachment: fixed; */
-  /* background-repeat: repeat; */
+  background-repeat: no-repeat;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -76,7 +76,7 @@ h2 {
   margin: 0px;
 }
 .startButton {
-  padding: 10px;
+  padding: 10px 20px;
 
   margin-left: auto;
   margin-right: auto;
@@ -180,7 +180,7 @@ input {
 
 /*-------mobile screen settings------------*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: portrait) {
   body {
     background: url("https://pbs.twimg.com/media/D-AM9kEU8AEU-y_.jpg");
     background-size: cover;
@@ -198,7 +198,7 @@ input {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     display: none;
   }
-  .startQuiz > p {
+  #quote {
     font-family: "Lora", serif;
     letter-spacing: 1px;
     color: #293042;
@@ -280,6 +280,57 @@ input {
   }
 }
 
+/*iPhone 5 Landscape */
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body {
+    background: url("https://voxpopulisphere.files.wordpress.com/2015/12/fa_1185_tomwaits15003.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: -20% 0;
+  }
+  .flex-container h3 {
+    margin: 10px;
+  }
+  .flex-container-header {
+    display: flex;
+    padding: 30px;
+    margin-left: 250px;
+    justify-content: flex-end;
+  }
+  .flex-container-header h1 {
+    font-size: 20px;
+  }
+
+  .startButton {
+    padding: 10px 20px;
+    /* margin: 20px auto; */
+    display: block;
+    border-radius: 5px;
+    border: 1px white solid;
+    background-color: #326273;
+    color: #ececec;
+    font-size: 1em;
+    width: 150px;
+  }
+  #quote {
+    font-family: "Lora", serif;
+    letter-spacing: 1px;
+    color: #37415a;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .questionAnswerForm {
+    margin-left: 300px;
+    font-size: 0.8em;
+    padding: 20px;
+  }
+  .questionAnswerForm h2 {
+    text-align: left;
+  }
+}
+
 /*--------iPad display----------*/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1224px) {
@@ -288,7 +339,7 @@ input {
     justify-content: flex-end;
   }
 
-  p {
+  #quote {
     font-family: "Lora", serif;
     letter-spacing: 1px;
     color: #37415a;
@@ -415,7 +466,7 @@ input {
 
   /* landing screen quote*/
 
-  p {
+  #quote {
     font-family: "Lora", serif;
     letter-spacing: 1px;
     color: #293042;

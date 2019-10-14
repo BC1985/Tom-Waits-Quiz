@@ -55,7 +55,10 @@ h2 {
   font-size: 1.2em;
   width: 100px;
 }
-
+.submitButton:focus {
+  background: rgb(125, 128, 136);
+  color: white;
+}
 .restartButton {
   padding: 50px;
   margin-left: auto;
@@ -169,6 +172,10 @@ input {
   text-align: center;
   font-size: 1em;
   display: block;
+}
+:focus {
+  background: rgb(125, 128, 136);
+  color: white;
 }
 
 /*-------mobile screen settings------------*/
